@@ -17,6 +17,7 @@ function createSubTree(
     summaryComponent.innerHTML = leaf;
     detailsComponent.appendChild(summaryComponent);
     let ul = document.createElement("ul");
+    ul.classList = "second-ul";
     subTree.forEach(branch => {
       if(branch.tree){
         let li = document.createElement("li");
@@ -47,6 +48,7 @@ function createSubTreeSubTree(
     summaryComponent.innerHTML = leaf;
     detailsComponent.appendChild(summaryComponent);
     let ul = document.createElement("ul");
+    ul.classList = "second-ul";
     subTree.forEach(branch => {
       createLeaf(ul,/* branchesContainer */branch.leaf /* leaf */)
     });

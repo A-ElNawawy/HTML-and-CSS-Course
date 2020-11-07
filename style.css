@@ -119,29 +119,39 @@ section {
   -ms-grid-row: 2;
   -ms-grid-row-span: 10;
   grid-row: 2 / span 10;
-  padding-left: 10px;
-  padding-top: 10px;
-  font-size: 40px;
-  overflow-x: auto;
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: (auto)[5];
-      grid-template-columns: repeat(5, auto);
-  -ms-grid-rows: (auto)[5];
-      grid-template-rows: repeat(5, auto);
-}
-
-section ul {
-  padding-left: 55px;
-  -ms-flex-preferred-size: 50%;
-      flex-basis: 50%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  background-color: red;
-  margin: auto;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 40px;
+  overflow-y: auto;
+}
+
+section > ul {
+  margin-left: 100px;
+  margin-right: 50px;
+}
+
+section .second-ul li {
+  margin-left: 40px;
+}
+
+section ul {
+  -ms-flex-preferred-size: auto;
+      flex-basis: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding-top: 20px;
 }
 
 section ul li {
@@ -149,11 +159,6 @@ section ul li {
       flex-basis: 100%;
   font-size: 30px;
   list-style-type: circle;
-  margin-bottom: 10px;
-}
-
-section ul li ul {
-  margin-top: 10px;
   margin-bottom: 10px;
 }
 

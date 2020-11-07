@@ -7,7 +7,13 @@ let tree1 = [
     layers: 3,
     leaf: "HTML Basics",
     tree: [
-      {leaf: "Basic code[ DOCTYPE ]"},
+      {
+        leaf: "Basic code",
+        tree: [
+          {leaf: "<a href='https://www.w3.org/QA/2002/04/valid-dtd-list.html'>[ DOCTYPE ]</a>"},
+          {leaf: "Head:<br><br>=> meta[ charset | name='description' | content='Welcome to my site' ] <br><br>=> title appears in [ search google, bookmark, browser]<br><br>=> style<br><br>=> link [rel='stylesheet', href='#']<br><br>=> script"},
+        ]
+      },
       {
         leaf: "Main Elements",
         tree: [
@@ -48,6 +54,10 @@ let tree1 = [
   {  //branch
     layers: 1,
     leaf: "HTML Block & Inline"
+  },
+  {  //branch
+    layers: 1,
+    leaf: "small training"
   },
   {  //branch
     layers: 1,
