@@ -1,10 +1,15 @@
+
+let pageHeader = document.getElementById("pageHeader").innerHTML;
+let pageTitle = document.getElementsByTagName("title")[0];
+pageTitle.innerHTML += " | " + pageHeader;
+
 /*
 ** Automation Decorate Active SideTitle:
 */
 let links = document.getElementsByTagName('a');
+
 for (const link of links) {
-  let href = link.href;
-  if(href.includes("html#")){
+  if(link.innerHTML == pageHeader){
     link.parentElement.classList.add("active");
   }
 }

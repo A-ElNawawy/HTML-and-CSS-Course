@@ -3,59 +3,67 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./../style.css">
+  <link rel="stylesheet" href="./../scss/style.css">
   <link rel="shortcut icon" href="#">
-  <title>HTML &amp; CSS Course</title>
+  <title>HTML &amp; CSS</title>
 </head>
 <body>
   <header>
-    <h1 class="upper-case"><a href="./../index.html">html &amp; css</a></h1>
+    <h2 id="pageHeader">What is HTML &amp; CSS?</h2>
   </header>
   <aside>
+    <div class="home dark">
+      <h1 class="upper-case"><a href="./../index.html">html &amp; css</a></h1>
+    </div>
     <ul>
       <li>
-        <a href="./p0.html">How am I?</a>
+        <a href="./../pages/p0.html">How am I?</a>
       </li>
       <li>
-        <a href="#">What is HTML &amp; CSS?</a>
+        <a href="./../pages/p1.html">What is HTML &amp; CSS?</a>
       </li>
       <li>
-        <a href="./p2.html">Relation between HTML and other web languages?</a>
+        <a href="./../pages/p2.html">HTML and other languages</a>
       </li>
       <li>
-        <a href="./p3.html">Production Sequence.</a>
+        <a href="./../pages/p3.html">Production Sequence</a>
       </li>
       <li>
-        <a href="./p4.html">What Will You Learn?</a>
+        <a href="./../pages/p4.html">What You Will Learn</a>
       </li>
       <li>
-        <a href="./p5.html">What will you be able to do after course?</a>
+        <a href="./../pages/p5.html">your skills after course</a>
       </li>
       <li>
-        <a href="./p6.html">Prerequisite knowledge.</a>
+        <a href="./../pages/p6.html">Prerequisite knowledge</a>
       </li>
       <li>
-        <a href="./p7.html">Prerequisite tools.</a>
+        <a href="./../pages/p7.html">Prerequisite tools</a>
       </li>
     </ul>
   </aside>
   <section>
-    <ul>
-      <li>HTML:</li>
-      <ul class="second-ul">
-        <li><a class="stands-for" href="https://www.w3schools.com/html/html_intro.asp"><span>H</span>yper <span>t</span>ext <span>M</span>arkup <span>L</span>anguage</a></li>
-        <li><a href="https://www.w3schools.in/html-tutorial/history/#:~:text=HTML%20was%20created%20by%20Sir,evolved%20with%20various%20versions%20updating.">Historical Information</a></li>
+    <div class="medium-words">
+      <ul>
+        <li>
+          HTML:
+          <ul class="second-ul">
+            <li><span class="stands-for">H</span>yper <span class="stands-for">t</span>ext <span class="stands-for">M</span>arkup <span class="stands-for">L</span>anguage. <a class="small lower-case" href="https://www.w3schools.com/html/html_intro.asp">read more</a></li>
+            <li>to read Historical Information About HTML <a href="https://www.w3schools.in/html-tutorial/history/#:~:text=HTML%20was%20created%20by%20Sir,evolved%20with%20various%20versions%20updating."><span class="small lower-case">click here</span></a></li>
+          </ul>
+        </li>
+        <li>
+          CSS:
+          <ul class="second-ul">
+            <li><span class="stands-for">c</span>ascading <span class="stands-for">s</span>tyle <span class="stands-for">s</span>heets. <a href="https://www.w3schools.com/css/css_intro.asp"><span class="small lower-case">read more</span></a></li>
+          </ul>
+        </li>
       </ul>
-      <li>CSS:</li>
-      <ul class="second-ul">
-        <li><a class="stands-for" href="https://www.w3schools.com/css/css_intro.asp"><span>c</span>ascading <span>s</span>tyle <span>s</span>heets</a></li>
-      </ul>
-    </ul>
+    </div>
   </section>
-  <footer>
-    <h6>copy right reserved &copy; 2020</h6>
-    <h6>Ahmed ElNawawy</h6>
+  <footer class="dark">
+    <h6>copy right reserved &copy; 2020 Ahmed ElNawawy</h6>
   </footer>
-  <script src="./../custom.js"></script>
+  <script src="./../js/custom.js"></script>
 </body>
 </html>

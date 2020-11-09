@@ -3,58 +3,64 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./../style.css">
+  <link rel="stylesheet" href="./../scss/style.css">
   <link rel="shortcut icon" href="#">
-  <title>HTML &amp; CSS Course</title>
+  <title>HTML &amp; CSS</title>
 </head>
 <body>
   <header>
-    <h1 class="upper-case"><a href="./../index.html">html &amp; css</a></h1>
+    <h2 id="pageHeader">What You Will Learn</h2>
   </header>
   <aside>
+    <div class="home dark">
+      <h1 class="upper-case"><a href="./../index.html">html &amp; css</a></h1>
+    </div>
     <ul>
       <li>
-        <a href="./p0.html">How am I?</a>
+        <a href="./../pages/p0.html">How am I?</a>
       </li>
       <li>
-        <a href="./p1.html">What is HTML &amp; CSS?</a>
+        <a href="./../pages/p1.html">What is HTML &amp; CSS?</a>
       </li>
       <li>
-        <a href="./p2.html">Relation between HTML and other web languages?</a>
+        <a href="./../pages/p2.html">HTML and other languages</a>
       </li>
       <li>
-        <a href="./p3.html">Production Sequence.</a>
+        <a href="./../pages/p3.html">Production Sequence</a>
       </li>
       <li>
-        <a href="#">What Will You Learn?</a>
+        <a href="./../pages/p4.html">What You Will Learn</a>
       </li>
       <li>
-        <a href="./p5.html">What will you be able to do after course?</a>
+        <a href="./../pages/p5.html">your skills after course</a>
       </li>
       <li>
-        <a href="./p6.html">Prerequisite knowledge.</a>
+        <a href="./../pages/p6.html">Prerequisite knowledge</a>
       </li>
       <li>
-        <a href="./p7.html">Prerequisite tools.</a>
+        <a href="./../pages/p7.html">Prerequisite tools</a>
       </li>
     </ul>
   </aside>
   <section>
-    <h3>HTML</h3>
-    <ul id="first-tree">
-      <script src="./../functions.js"></script>
-      <script src="./../data/p4-1.js"></script>
-    </ul>
-    <hr>
-    <h3>CSS</h3>
-    <ul id="second-tree">
-      <script src="./../data/p4-2.js"></script>
-    </ul>
+    <div class="a-lot-words">
+      <h3>HTML</h3>
+      <ul id="first-tree">
+        <!-- from JS -->
+      </ul>
+      <hr>
+      <h3>CSS</h3>
+      <ul id="second-tree">
+        <!-- from JS -->
+      </ul>
+    </div>
   </section>
-  <footer>
-    <h6>copy right reserved &copy; 2020</h6>
-    <h6>Ahmed ElNawawy</h6>
+  <footer class="dark">
+    <h6>copy right reserved &copy; 2020 Ahmed ElNawawy</h6>
   </footer>
-  <script src="./../custom.js"></script>
+  <script src="./../js/functions.js"></script>
+  <script src="./../data/p4-1.js"></script>
+  <script src="./../data/p4-2.js"></script>
+  <script src="./../js/custom.js"></script>
 </body>
 </html>

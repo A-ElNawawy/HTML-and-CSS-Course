@@ -1,0 +1,269 @@
+/* Start Imports */
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu&display=swap");
+/* Start colors */
+/* End colors */
+/* Start dimensions */
+/* End dimensions */
+/* Start FontSize */
+/* End FontSize */
+/* End Imports */
+/* Start Resets */
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* End Resets */
+/* Start Main Rulz */
+h1, h2, h3, h4, h5, h6 {
+  text-align: center;
+  text-transform: capitalize;
+}
+
+ul {
+  margin-bottom: 20px;
+}
+
+li {
+  text-transform: capitalize;
+  list-style-type: circle;
+}
+
+a {
+  color: inherit;
+}
+
+a:hover {
+  color: #0127fd;
+}
+
+hr {
+  margin: 25px 0;
+}
+
+.upper-case {
+  text-transform: uppercase;
+}
+
+.lower-case {
+  text-transform: lowercase;
+}
+
+.stands-for {
+  text-transform: uppercase;
+  font-weight: bold;
+  color: red;
+}
+
+.small {
+  font-size: 20px;
+}
+
+.dark {
+  background-color: #2b2626;
+  color: #f1f1f1;
+}
+
+.light {
+  background-color: #f1f1f1;
+  color: #2b2626;
+}
+
+.active {
+  background-color: #2b2626;
+  color: #f1f1f1;
+}
+
+.active:hover a {
+  color: #f1f1f1;
+  -webkit-transform: none;
+          transform: none;
+  cursor: default;
+}
+
+/* End Main Rulz */
+body {
+  min-height: 100vh;
+  background-color: #ffffff;
+  color: #2b2626;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (calc(100%/12))[12];
+      grid-template-columns: repeat(12, calc(100%/12));
+  -ms-grid-rows: 70px auto auto auto auto auto auto auto auto auto auto auto 30px;
+      grid-template-rows: 70px auto auto auto auto auto auto auto auto auto auto auto 30px;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+header {
+  background-color: #f1f1f1;
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 10;
+  grid-column: 3 / span 10;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  grid-row: 1 / span 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 35px;
+}
+
+aside {
+  background-color: #f1f1f1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-column: 1 / span 2;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 13;
+  grid-row: 1 / span 13;
+}
+
+aside .home {
+  height: 70px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+aside li:first-of-type.active {
+  border-top: 1px solid #ffffff;
+}
+
+aside ul li {
+  padding-right: 7px;
+  border-bottom: 2px solid #ffffff;
+}
+
+aside ul li a {
+  color: inherit;
+  padding-left: 15px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  display: block;
+  width: 100%;
+  -webkit-transition: -webkit-transform .3s ease-in-out;
+  transition: -webkit-transform .3s ease-in-out;
+  transition: transform .3s ease-in-out;
+  transition: transform .3s ease-in-out, -webkit-transform .3s ease-in-out;
+}
+
+aside ul li:hover a {
+  color: #0127fd;
+  -webkit-transform: translateX(-10px);
+          transform: translateX(-10px);
+}
+
+section {
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 10;
+  grid-column: 3 / span 10;
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 11;
+  grid-row: 2 / span 11;
+  overflow-y: auto;
+}
+
+section li {
+  margin-bottom: 5px;
+}
+
+section h3 {
+  text-decoration: underline;
+}
+
+section a {
+  color: #0127fd;
+}
+
+section .little-words {
+  font-size: 70px;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+section .medium-words {
+  font-size: 40px;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+section .medium-words > ul {
+  width: 80%;
+}
+
+section .a-lot-words {
+  font-size: 20px;
+  width: 100%;
+  height: 100%;
+  padding-top: 20px;
+  padding-left: 50px;
+}
+
+section .second-ul {
+  margin-left: 20px;
+}
+
+footer {
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 10;
+  grid-column: 3 / span 10;
+  -ms-grid-row: 13;
+  -ms-grid-row-span: 1;
+  grid-row: 13 / span 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer h6 {
+  font-size: 15px;
+  text-decoration: none;
+}
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,185 @@
+/* Start Imports */
+  @import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+  @import './_variables/_variables.scss';
+/* End Imports */
+
+/* Start Resets */
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  ul{
+    list-style: none;
+  }
+  a{
+    text-decoration: none;
+  }
+/* End Resets */
+
+/* Start Main Rulz */
+  h1,h2,h3,h4,h5,h6{
+    text-align: center;
+    text-transform: capitalize;
+  }
+  ul{
+    margin-bottom: 20px;
+  }
+  li{
+    text-transform: capitalize;
+    list-style-type: circle;
+  }
+  a{
+    color: inherit;
+  }
+  a:hover{
+    color: $hyperLink-color;
+  }
+  hr{
+    margin: 25px 0;
+  }
+  .upper-case{
+    text-transform: uppercase;
+  }
+  .lower-case{
+    text-transform: lowercase;
+  }
+  .stands-for{
+    text-transform: uppercase;
+    font-weight: bold;
+    color: red;
+  }
+  .small{
+    font-size: 20px;
+  }
+  .dark{
+    background-color: $dark-color;
+    color: $light-color;
+  }
+  .light{
+    background-color: $light-color;
+    color: $dark-color;
+  }
+  .active{
+    background-color: $activeBackground-color;
+    color: $active-color;
+    &:hover{
+      a{
+        color: $active-color;
+        transform: none;
+        cursor: default;
+      }
+    }
+  }
+/* End Main Rulz */
+
+body{
+  min-height: 100vh;
+  background-color: $bodyBackground-color;
+  color: $body-color;
+  display: grid;
+  grid-template-columns: repeat(12, calc(100%/12));
+  grid-template-rows: $header-height auto auto auto auto auto auto auto auto auto auto auto $footer-height;
+  font-family: 'Ubuntu', sans-serif;
+}
+header{
+  background-color: $headerBackground-color;
+  grid-column: 3 / span 10;
+  grid-row: 1 / span 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: $header-font;
+}
+aside{
+  background-color: $asideBackground-color;
+  grid-column: 1 / span 2;
+  grid-row: 1 / span 13;
+  .home{
+    height: $header-height;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  li:first-of-type.active{
+    border-top: 1px solid $bodyBackground-color;
+  }
+  ul{
+    li{
+      padding-right: 7px;
+      border-bottom: 2px solid $bodyBackground-color;
+      a{
+        color: inherit;
+        padding-left: 15px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        display: block;
+        //margin: 9px 2px;
+        width: 100%;
+        transition: transform .3s ease-in-out;
+      }
+      &:hover{
+        a{
+          color: $hyperLink-color;
+          transform: translateX(-10px);
+        }
+      }
+    }
+  }
+}
+section{
+  grid-column: 3 / span 10;
+  grid-row: 2 / span 11;
+  overflow-y: auto;
+  li{
+    margin-bottom: 5px;
+  }
+  h3{
+    text-decoration: underline;
+  }
+  a{
+    color: $hyperLink-color;
+  }
+  .little-words{
+    font-size: $big-font;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .medium-words{
+    //background-color: red;
+    font-size: $medium-font;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    & > ul{
+      width: 80%;
+    }
+  }
+  .a-lot-words{
+    //background-color: red;
+    font-size: $small-font;
+    width: 100%;
+    height: 100%;
+    padding-top: 20px;
+    padding-left: 50px;
+  }
+  .second-ul{
+    margin-left: 20px;
+  }
+}
+footer{
+  grid-column: 3 / span 10;
+  grid-row: 13 / span 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  h6{
+    font-size: 15px;
+    text-decoration: none;
+  }
+}

@@ -9,6 +9,6 @@ let tree1 = [
   },
   {  //branch
     layers: 1,
-    leaf: "Editor. [free] [VScode]"
+    leaf: "Editor ==> VScode. [free]"
   }
 ]
