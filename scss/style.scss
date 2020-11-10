@@ -114,7 +114,6 @@ aside{
         padding-top: 10px;
         padding-bottom: 10px;
         display: block;
-        //margin: 9px 2px;
         width: 100%;
         transition: transform .3s ease-in-out;
       }
@@ -152,7 +151,6 @@ section{
     justify-content: center;
   }
   .medium-words{
-    //background-color: red;
     font-size: $medium-font;
     width: 100%;
     height: 100%;
@@ -164,7 +162,6 @@ section{
     }
   }
   .a-lot-words{
-    //background-color: red;
     font-size: $small-font;
     width: 100%;
     height: 100%;
@@ -192,20 +189,15 @@ footer{
   /* Extra small devices (phones, 600px and down) */
   @media only screen and (max-width: 600px) {
     /* Start dimensions */
-
       $header-height: 40px;
       $footer-height: 20px;
-
     /* End dimensions */
-
     /* Start FontSize */
-
       $header-font: 15px;
       $footer-font: 10px;
       $big-font: 45px;
       $medium-font: 15px;
       $small-font: 15px;
-
     /* End FontSize */
     body{
       grid-template-rows: $header-height auto auto auto auto auto auto auto auto auto auto auto $footer-height;
@@ -216,36 +208,20 @@ footer{
     }
     aside{
       grid-column: 1 / span 4;
+      .home{
+        height: $header-height;
+      }
     }
     section{
       grid-column: 5 / span 8;
       .little-words{
         font-size: $big-font;
-        width: 100%;
-        height: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
       }
       .medium-words{
-        //background-color: red;
         font-size: $medium-font;
-        width: 100%;
-        height: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        & > ul{
-          width: 80%;
-        }
       }
       .a-lot-words{
-        //background-color: red;
         font-size: $small-font;
-        width: 100%;
-        height: 100%;
-        padding-top: 20px;
-        padding-left: 50px;
       }
     }
     footer{
@@ -255,22 +231,116 @@ footer{
 
   /* Small devices (portrait tablets and large phones, 600px and up) */
   @media only screen and (min-width: 600px) {
-    
+    /* Start dimensions */
+      $header-height: 40px;
+      $footer-height: 20px;
+    /* End dimensions */
+    /* Start FontSize */
+      $header-font: 20px;
+      $big-font: 45px;
+      $medium-font: 25px;
+    /* End FontSize */
+    body{
+      grid-template-rows: $header-height auto auto auto auto auto auto auto auto auto auto auto $footer-height;
+    }
+    header{
+      grid-column: 5 / span 8;
+      font-size: $header-font;
+    }
+    aside{
+      grid-column: 1 / span 4;
+      .home{
+        height: $header-height;
+      }
+    }
+    section{
+      grid-column: 5 / span 8;
+      .little-words{
+        font-size: $big-font;
+      }
+      .medium-words{
+        font-size: $medium-font;
+      }
+      .a-lot-words{
+        font-size: $small-font;
+      }
+    }
+    footer{
+      grid-column: 5 / span 8;
+    }
   }
 
   /* Medium devices (landscape tablets, 768px and up) */
   @media only screen and (min-width: 768px) {
-    
+    /* Start FontSize */
+      $big-font: 60px;
+      $medium-font: 30px;
+    /* End FontSize */
+    body{
+      grid-template-rows: $header-height auto auto auto auto auto auto auto auto auto auto auto $footer-height;
+    }
+    header{
+      grid-column: 5 / span 8;
+      font-size: $header-font;
+    }
+    aside{
+      grid-column: 1 / span 4;
+      .home{
+        height: $header-height;
+      }
+    }
+    section{
+      grid-column: 5 / span 8;
+      .little-words{
+        font-size: $big-font;
+      }
+      .medium-words{
+        font-size: $medium-font;
+      }
+      .a-lot-words{
+        font-size: $small-font;
+      }
+    }
+    footer{
+      grid-column: 5 / span 8;
+    }
   }
 
   /* Large devices (laptops/desktops, 992px and up) */
   @media only screen and (min-width: 992px) {
-    
+    /* Start FontSize */
+      $medium-font: 30px;
+    /* End FontSize */
+    body{
+      grid-template-rows: $header-height auto auto auto auto auto auto auto auto auto auto auto $footer-height;
+    }
+    header{
+      grid-column: 3 / span 10;
+    }
+    aside{
+      grid-column: 1 / span 2;
+    }
+    section{
+      grid-column: 3 / span 10;
+      .medium-words{
+        font-size: $medium-font;
+      }
+    }
+    footer{
+      grid-column: 3 / span 10;
+    }
   }
 
   /* Extra large devices (large laptops and desktops, 1200px and up) */
   @media only screen and (min-width: 1200px) {
-    
+    /* Start FontSize */
+      $medium-font: 40px;
+    /* End FontSize */
+    section{
+      .medium-words{
+        font-size: $medium-font;
+      }
+    }
   }
 
 /* End Responsive */
