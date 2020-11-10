@@ -146,6 +146,7 @@ aside .home {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  font-size: 15px;
 }
 
 aside li:first-of-type.active {
@@ -291,6 +292,7 @@ footer {
   }
   aside .home {
     height: 40px;
+    font-size: 10px;
   }
   section {
     -ms-grid-column: 5;
@@ -337,6 +339,7 @@ footer {
   }
   aside .home {
     height: 40px;
+    font-size: 13px;
   }
   section {
     -ms-grid-column: 5;
@@ -380,6 +383,7 @@ footer {
   }
   aside .home {
     height: 70px;
+    font-size: 15px;
   }
   section {
     -ms-grid-column: 5;
