@@ -178,9 +178,7 @@ footer{
   display: flex;
   justify-content: center;
   align-items: center;
-  h6{
-    font-size: $footer-font;
-  }
+  font-size: $footer-font;
 }
 
 
@@ -226,6 +224,7 @@ footer{
     }
     footer{
       grid-column: 5 / span 8;
+      font-size: $footer-font;
     }
   }
 
