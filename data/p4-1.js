@@ -57,7 +57,7 @@ let tree1 = [
   },
   {  //branch
     layers: 1,
-    leaf: "small training"
+    leaf: "small training ( create form )"
   },
   {  //branch
     layers: 1,
@@ -84,6 +84,10 @@ let tree1 = [
   {  //branch
     layers: 1,
     leaf: "HTML symbols"
+  },
+  {  //branch
+    layers: 1,
+    leaf: "small training ( create layout with html5 )"
   },
   {  // branch
     layers: 2,

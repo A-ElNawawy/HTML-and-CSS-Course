@@ -122,7 +122,7 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  font-size: 35px;
+  font-size: 25px;
 }
 
 aside {
@@ -184,6 +184,10 @@ section {
   -ms-grid-row-span: 11;
   grid-row: 2 / span 11;
   overflow-y: auto;
+}
+
+section > div > ul > li {
+  list-style-type: disc;
 }
 
 section li {
@@ -264,6 +268,83 @@ footer {
 
 footer h6 {
   font-size: 15px;
-  text-decoration: none;
 }
+
+/* Start Responsive */
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  /* Start dimensions */
+  /* End dimensions */
+  /* Start FontSize */
+  /* End FontSize */
+  body {
+    -ms-grid-rows: 40px auto auto auto auto auto auto auto auto auto auto auto 20px;
+        grid-template-rows: 40px auto auto auto auto auto auto auto auto auto auto auto 20px;
+  }
+  header {
+    -ms-grid-column: 5;
+    -ms-grid-column-span: 8;
+    grid-column: 5 / span 8;
+    font-size: 15px;
+  }
+  aside {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 4;
+    grid-column: 1 / span 4;
+  }
+  section {
+    -ms-grid-column: 5;
+    -ms-grid-column-span: 8;
+    grid-column: 5 / span 8;
+  }
+  section .little-words {
+    font-size: 45px;
+    width: 100%;
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  section .medium-words {
+    font-size: 15px;
+    width: 100%;
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  section .medium-words > ul {
+    width: 80%;
+  }
+  section .a-lot-words {
+    font-size: 15px;
+    width: 100%;
+    height: 100%;
+    padding-top: 20px;
+    padding-left: 50px;
+  }
+  footer {
+    -ms-grid-column: 5;
+    -ms-grid-column-span: 8;
+    grid-column: 5 / span 8;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+/* Medium devices (landscape tablets, 768px and up) */
+/* Large devices (laptops/desktops, 992px and up) */
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+/* End Responsive */
 /*# sourceMappingURL=style.css.map */

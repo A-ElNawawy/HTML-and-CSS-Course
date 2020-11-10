@@ -5,22 +5,22 @@ let tree1 = [
   },
   {  //branch
     layers: 1,
-    leaf: "<a target='_blank' href='https://www.w3schools.com/howto/tryhow_css_example_website.htm'>Template 1.</a>"
+    leaf: "<a target='_blank' href='https://www.w3schools.com/howto/tryhow_css_example_website.htm'>Layout Template.</a>"
   },
   {  //branch
     layers: 1,
-    leaf: "<a target='_blank' href='https://a-elnawawy.github.io/ResumeAfter/'>Template 2.</a>"
+    leaf: "<a target='_blank' href='https://a-elnawawy.github.io/ResumeAfter/'>Resume Template.</a>"
   },
   {  //branch
     layers: 1,
-    leaf: "<a target='_blank' href='https://a-elnawawy.github.io/GlancerAfter/'>Template 3.</a>"
+    leaf: "<a target='_blank' href='https://a-elnawawy.github.io/GlancerAfter/'>Freelance Template.</a>"
   },
   {  //branch
     layers: 1,
-    leaf: "<a target='_blank' href='https://a-elnawawy.github.io/ClassicAfter/'>Template 4.</a>"
+    leaf: "<a target='_blank' href='https://a-elnawawy.github.io/ClassicAfter/'>Portfolio Template.</a>"
   },
   {  //branch
     layers: 1,
-    leaf: "<a target='_blank' href='https://www.newmama.website/'>Template 5.</a>"
+    leaf: "<a target='_blank' href='https://www.newmama.website/'>Blog Template.</a>"
   }
 ]
